@@ -17,6 +17,16 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  let step = '';
+  for (let i = 0; i < n; i += 1) {
+    step = step.trim();
+    step += '#';
+    while (step.length < n) {
+      step += ' ';
+    }
+    console.log(step, step.length)
+  }
+}
 
 module.exports = steps;
